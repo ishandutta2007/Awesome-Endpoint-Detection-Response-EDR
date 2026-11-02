@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR?style=flat-square&color=orange" alt="GitHub Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
@@ -70,59 +70,59 @@ The global Endpoint Detection and Response (EDR) market is currently valued betw
 
 ## 🔓 Open-Source GitHub Projects
 
-Open-source endpoint security tools empower organizations to retain full ownership of telemetry data, avoid vendor lock-in, and inspect detection logic. The repositories below are sorted in **descending order by GitHub star count**.
+Open-source endpoint security tools empower organizations to retain full ownership of telemetry data, avoid vendor lock-in, and inspect detection logic. The repositories below are sorted in **descending order by GitHub Stars_Count**.
 
 ### 🔥 Primary Open-Source Platforms
 
-1. **[osquery](https://github.com/osquery/osquery)** [![GitHub stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers)
+1. **[osquery](https://github.com/osquery/osquery)** [![GitHub_Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers)
    - **SQL-Powered Operating System Instrumentation, Monitoring, and Analytics (Apache 2.0)**
    - **Highlights**: Exposes an entire operating system as a high-performance relational database. Query processes, open network sockets, kernel modules, file integrity (FIM), and scheduled tasks with standard SQL statements.
    - **Tech Stack**: C++, CMake, SQLite engine. Supports Linux, macOS, Windows, and FreeBSD.
    - **Best For**: Real-time cross-platform host interrogation, telemetry collection pipelines, and compliance verification.
 
-2. **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
+2. **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub_Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
    - **Unified Open Source SIEM, XDR & Security Monitoring Platform (GPLv2)**
    - **Highlights**: The most deployed open-source endpoint security solution. Features host intrusion detection (HIDS), file integrity monitoring (FIM), vulnerability assessment, automated active responses (firewall dropping, host isolation, account locking), and deep MITRE ATT&CK mapping.
    - **Tech Stack**: C, Python, OpenSearch indexing backend.
    - **Best For**: Centralized SOC visibility, regulatory compliance (PCI DSS, HIPAA, NIST, CIS benchmarks), and log-based threat mitigation.
 
-3. **[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)** [![GitHub stars](https://img.shields.io/github/stars/redcanaryco/atomic-red-team?style=social&color=white)](https://github.com/redcanaryco/atomic-red-team/stargazers)
+3. **[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)** [![GitHub_Stars](https://img.shields.io/github/stars/redcanaryco/atomic-red-team?style=social&color=white)](https://github.com/redcanaryco/atomic-red-team/stargazers)
    - **Library of Simple, Portable Open-Source Tests Mapped to MITRE ATT&CK (MIT)**
    - **Highlights**: Essential companion tool for verifying and benchmarking EDR capabilities. Provides scripted atomic tests to simulate adversary techniques and evaluate whether your EDR agents reliably log and alert on adversarial activity.
    - **Tech Stack**: YAML, PowerShell, Bash, Python.
    - **Best For**: EDR alert validation, detection regression testing, and security posture validation.
 
-4. **[Sigma](https://github.com/SigmaHQ/sigma)** [![GitHub stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)
+4. **[Sigma](https://github.com/SigmaHQ/sigma)** [![GitHub_Stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)
    - **Generic Signature Format for SIEM and EDR Detection Systems (DRL License)**
    - **Highlights**: The standard open detection format. Write rules once and automatically translate them into queries for Wazuh, Splunk, Elastic, Microsoft Sentinel, and Velociraptor.
    - **Tech Stack**: YAML, Python (`pySigma`).
    - **Best For**: Portable detection engineering and cross-platform rule management.
 
-5. **[Fleet](https://github.com/fleetdm/fleet)** [![GitHub stars](https://img.shields.io/github/stars/fleetdm/fleet?style=social&color=white)](https://github.com/fleetdm/fleet/stargazers)
+5. **[Fleet](https://github.com/fleetdm/fleet)** [![GitHub_Stars](https://img.shields.io/github/stars/fleetdm/fleet?style=social&color=white)](https://github.com/fleetdm/fleet/stargazers)
    - **Open-Source Endpoint Management & Osquery Fleet Manager (MIT / Core)**
    - **Highlights**: Lightweight, scalable central control server for managing thousands of Osquery and Orbit agents across enterprise desktop and server environments.
    - **Tech Stack**: Go, Vue.js, MySQL, Redis.
    - **Best For**: Real-time fleet-wide host visibility, scheduled live query automation, and IT/security cross-collaboration.
 
-6. **[GRR Rapid Response](https://github.com/google/grr)** [![GitHub stars](https://img.shields.io/github/stars/google/grr?style=social&color=white)](https://github.com/google/grr/stargazers)
+6. **[GRR Rapid Response](https://github.com/google/grr)** [![GitHub_Stars](https://img.shields.io/github/stars/google/grr?style=social&color=white)](https://github.com/google/grr/stargazers)
    - **Enterprise Remote Digital Forensics and Incident Response Framework (Apache 2.0)**
    - **Highlights**: Created by Google to conduct scalable incident triage. Facilitates deep endpoint volatile memory analysis, remote raw disk access, file extraction, and automated forensic timelines.
    - **Tech Stack**: Python, Protocol Buffers.
    - **Best For**: Incident response teams requiring deep forensic collection across large distributed fleets.
 
-7. **[OSSEC HIDS](https://github.com/ossec/ossec-hids)** [![GitHub stars](https://img.shields.io/github/stars/ossec/ossec-hids?style=social&color=white)](https://github.com/ossec/ossec-hids/stargazers)
+7. **[OSSEC HIDS](https://github.com/ossec/ossec-hids)** [![GitHub_Stars](https://img.shields.io/github/stars/ossec/ossec-hids?style=social&color=white)](https://github.com/ossec/ossec-hids/stargazers)
    - **Pioneering Host-Based Intrusion Detection System (GPLv2)**
    - **Highlights**: Foundational engine that originally powered Wazuh. Offers signature-based log analysis, rootkit detection, active firewall responses, and lightweight integrity checking.
    - **Tech Stack**: C.
    - **Best For**: Minimalist servers, legacy operating systems, and resource-constrained environments.
 
-8. **[Velociraptor](https://github.com/velocidex/velociraptor)** [![GitHub stars](https://img.shields.io/github/stars/velocidex/velociraptor?style=social&color=white)](https://github.com/velocidex/velociraptor/stargazers)
+8. **[Velociraptor](https://github.com/velocidex/velociraptor)** [![GitHub_Stars](https://img.shields.io/github/stars/velocidex/velociraptor?style=social&color=white)](https://github.com/velocidex/velociraptor/stargazers)
    - **Advanced Digital Forensics and Threat Hunting Platform (Apache 2.0)**
    - **Highlights**: Industry powerhouse for DFIR. Uses VQL (Velociraptor Query Language) to execute complex, multi-threaded investigations and live memory/file artifact hunts across tens of thousands of endpoints in minutes.
    - **Tech Stack**: Go.
    - **Best For**: Proactive threat hunting, triage automation, and rapid incident response investigations.
 
-9. **[OpenEDR](https://github.com/ComodoSecurity/openedr)** [![GitHub stars](https://img.shields.io/github/stars/ComodoSecurity/openedr?style=social&color=white)](https://github.com/ComodoSecurity/openedr/stargazers)
+9. **[OpenEDR](https://github.com/ComodoSecurity/openedr)** [![GitHub_Stars](https://img.shields.io/github/stars/ComodoSecurity/openedr?style=social&color=white)](https://github.com/ComodoSecurity/openedr/stargazers)
    - **Full-Featured Open-Source Endpoint Detection & Response Engine (Open Source)**
    - **Highlights**: Open-sourced by Xcitium/Comodo. Incorporates native kernel drivers and user-mode services for process tracking, file/network interception, memory inspection, and MITRE ATT&CK correlation.
    - **Tech Stack**: C, C++.
@@ -132,15 +132,15 @@ Open-source endpoint security tools empower organizations to retain full ownersh
 
 ### 🧪 Emerging, Niche & Framework Projects
 
-10. **[Rustinel](https://github.com/Karib0u/rustinel)** [![GitHub stars](https://img.shields.io/github/stars/Karib0u/rustinel?style=social&color=white)](https://github.com/Karib0u/rustinel/stargazers)
+10. **[Rustinel](https://github.com/Karib0u/rustinel)** [![GitHub_Stars](https://img.shields.io/github/stars/Karib0u/rustinel?style=social&color=white)](https://github.com/Karib0u/rustinel/stargazers)
     - **Cross-Platform Telemetry & Detection Engine in Rust**
     - Collects Windows ETW and Linux eBPF telemetry without kernel drivers. Evaluates Sigma rules and YARA signatures in user space with ECS-compliant NDJSON alert outputs.
 
-11. **[Vettaiyan](https://github.com/m0n1x90/vettaiyan)** [![GitHub stars](https://img.shields.io/github/stars/m0n1x90/vettaiyan?style=social&color=white)](https://github.com/m0n1x90/vettaiyan/stargazers)
+11. **[Vettaiyan](https://github.com/m0n1x90/vettaiyan)** [![GitHub_Stars](https://img.shields.io/github/stars/m0n1x90/vettaiyan?style=social&color=white)](https://github.com/m0n1x90/vettaiyan/stargazers)
     - **Enterprise-Grade Open-Source Windows EDR Engine in C/C++**
     - Utilizes Windows kernel callbacks (PsSetCreateProcessNotifyRoutineEx, ObRegisterCallbacks, Registry callbacks) for process, thread, and registry tampering detection alongside YARA memory scanning.
 
-12. **[Warden](https://github.com/Spellskite-coding/Warden)** [![GitHub stars](https://img.shields.io/github/stars/Spellskite-coding/Warden?style=social&color=white)](https://github.com/Spellskite-coding/Warden/stargazers)
+12. **[Warden](https://github.com/Spellskite-coding/Warden)** [![GitHub_Stars](https://img.shields.io/github/stars/Spellskite-coding/Warden?style=social&color=white)](https://github.com/Spellskite-coding/Warden/stargazers)
     - **Security-First Linux Workstation EDR (Rust)**
     - Designed specifically for Linux endpoints with automated quarantine, ransomware behavioral detection, YARA integration, and strict privilege elevation controls.
 
@@ -155,7 +155,7 @@ We welcome contributions, corrections, and additions from the cybersecurity comm
 3. ✍️ **Add or Update Entries**:
    - Ensure software entries follow the tabular/bullet schema.
    - Include factual pricing, free trial specifications, and accurate technical details.
-   - For open-source tools, include the repository URL, star badge, license, and primary use case.
+   - For open-source tools, include the repository URL, Stars_Badge, license, and primary use case.
 4. 📬 **Submit a Pull Request** with a concise description of your changes.
 
 ---
