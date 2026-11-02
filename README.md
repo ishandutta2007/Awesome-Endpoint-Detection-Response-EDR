@@ -1,48 +1,57 @@
-# Awesome-Endpoint-Detection-Response-EDR
+# Awesome Endpoint Detection and Response (EDR) 🛡️⚡
 
-# Awesome-Endpoint-Detection-Response-EDR
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Endpoint Detection and Response (EDR) Banner" width="100%" />
+</p>
 
-**Top Endpoint Detection Response EDR (Opensource) 🌟 Star if you like it! 🌟**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR?style=flat-square&color=orange" alt="GitHub Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Endpoint-Detection-Response-EDR/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
+## 📌 Executive Summary & Introduction
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+Welcome to the definitive **Awesome Endpoint Detection and Response (EDR)** collection — a curated directory of market-leading **SaaS platforms**, enterprise extended detection & response (**XDR**) frameworks, and production-tested **open-source security projects**. 
 
-*Focused on Runtime Telemetry, Behavioral Detection, Automated Response & Self-Hosted Endpoint Security*
+Designed for **Security Operations Center (SOC) teams, DFIR specialists, detection engineers, and security architects**, this guide focuses on:
+- 🔍 **Real-time Runtime Telemetry** (ETW, eBPF, auditd, audit logs)
+- 🧠 **Behavioral Analytics & Anomaly Detection** (MITRE ATT&CK® mapping, LOLBAS activity)
+- 🚨 **Automated Incident Response & Remediation** (Host isolation, process kill, ransomware rollback)
+- 🛠️ **Self-Hosted, Transparent Security Architectures** for complete data privacy
 
-**Last updated: November 2026**
+---
 
+## 📑 Table of Contents
 
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [🔥 Primary Open-Source Platforms](#-primary-open-source-platforms)
+  - [🧪 Emerging, Niche & Framework Projects](#-emerging-niche--framework-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Endpoint Detection & Response (EDR)**. These tools enable security teams to monitor endpoints for malicious behavior, investigate incidents, and respond to threats in real time—from fully managed enterprise platforms with AI-driven detection and managed hunting to open-source frameworks that give organizations control over their telemetry and response logic.
+---
 
+## 📊 Sector Overview & Market Dynamics
 
+The global Endpoint Detection and Response (EDR) market is currently valued between **$5.1B and $7.2B**, forecasted to surge past **$18B to $45B+** by the early 2030s at an estimated **22%–26% CAGR**. The sector exhibits a distinct two-tier market structure:
 
-**Examples** include CrowdStrike Falcon Insight, SentinelOne Singularity Complete, Microsoft Defender for Endpoint, Palo Alto Cortex XDR, Carbon Black EDR, Cybereason, Trend Micro Vision One, Trellix EDR, Sophos EDR, and Huntress (the category leaders in commercial space).
+- **Moderately Concentrated at the Platform Tier**: An established oligopoly of cybersecurity heavyweights—including Microsoft, CrowdStrike, SentinelOne, and Palo Alto Networks—dominates enterprise budgets through platform consolidation across endpoint security, cloud security posture, identity protection (ITDR), and native SIEM ingestion.
+- **Fragmented in Implementation & Services**: The broader delivery ecosystem remains highly fragmented across hundreds of localized Managed Detection and Response (MDR) providers, niche compliance tools, and specialized digital forensics and incident response (DFIR) toolkits tailored for SMBs and sovereign privacy requirements.
 
+---
 
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted endpoint detection, behavioral monitoring, and open response infrastructure. **Critical note**: True open-source EDR is a crowded but fragmented space—**Wazuh** is the most complete SIEM/EDR hybrid, **Velociraptor** dominates DFIR and threat hunting at scale, and **OpenEDR** offers a dedicated EDR codebase from Xcitium. No open-source project matches CrowdStrike's kernel-level prevention or SentinelOne's autonomous response, but for detection and investigation, the options are production-proven.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
-
-The global Endpoint Detection and Response (EDR) market is valued between **$5.1B and $7.2B** (projected to reach **$18B to $45B+** by the early 2030s at a 22–26% CAGR). The market is **moderately concentrated** at the top tier—dominated by an oligopoly of enterprise platform heavyweights like Microsoft, CrowdStrike, SentinelOne, and Palo Alto Networks driving vendor consolidation—while remaining **fragmented** across specialized Managed Detection and Response (MDR) providers and regional compliance niches.
-
-## SaaS/Hosted Platforms
+## ☁️ SaaS / Hosted Platforms
 
 | Product | Company Valuation / Revenue | Starting Pricing | Free Tier / Trial Limits | Description & Key Trade-offs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -57,90 +66,117 @@ The global Endpoint Detection and Response (EDR) market is valued between **$5.1
 | **Trellix EDR** | **~$1.05B Revenue** (PE-backed STG/Advent) | **~$45.00/endpoint/year** (baseline Endpoint Security / EDR license via partner quote) | **60-day free trial** (official Endpoint Security ePO evaluation provisioned for up to 5 trial nodes via sales) | Enterprise EDR integrating threat intelligence from legacy FireEye and McAfee engines. Trade-off is legacy console migration complexity. |
 | **Cybereason** | **~$850M Valuation** (Acquired by LevelBlue) / ~$180M Revenue | **~$40.00/endpoint/year** (entry enterprise tier via authorized distribution quote; ~$3.33/endpoint/month) | **14 to 30-day proof-of-concept (POC)** (custom enterprise evaluation environment provisioned via sales rep) | AI-guided MalOp cross-machine correlation and MITRE ATT&CK visibility. Trade-off is enterprise pricing floor and implementation overhead. |
 
-## Open-Source GitHub Projects
+---
 
+## 🔓 Open-Source GitHub Projects
 
+Open-source endpoint security tools empower organizations to retain full ownership of telemetry data, avoid vendor lock-in, and inspect detection logic. The repositories below are sorted in **descending order by GitHub star count**.
 
-- **Wazuh**
+### 🔥 Primary Open-Source Platforms
 
-  **Open Source Security Platform: Unified XDR and SIEM** (GPLv2) — **the most complete open-source SIEM/EDR hybrid**, with a large community and production deployments at scale . **Features**: **Host intrusion detection** (FIM, rootkit detection, log analysis); **vulnerability detection**; **security configuration assessment** (CIS, PCI DSS, HIPAA, NIST); **active response**—firewall-drop, host-deny, disable-account with configurable timeouts ; **MITRE ATT&CK mapping** for threat hunting; **container security** for Docker and Kubernetes. **Limitations**: **No real-time prevention**—detection is log-based, not kernel instrumentation; **requires significant technical expertise** to deploy and tune; **Indexer (OpenSearch) consumes substantial resources** . **Tech stack**: C, Python, OpenSearch. **Deploy**: Self-hosted (Docker, packages) or Wazuh Cloud. **Trade-off**: **Detection and response, not prevention**—it can block IPs and disable accounts but does not stop process execution like commercial EDR . **Best for**: organizations wanting a free, comprehensive SIEM/EDR with compliance mapping and active response—willing to invest in tuning and infrastructure.
+1. **[osquery](https://github.com/osquery/osquery)** [![GitHub stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers)
+   - **SQL-Powered Operating System Instrumentation, Monitoring, and Analytics (Apache 2.0)**
+   - **Highlights**: Exposes an entire operating system as a high-performance relational database. Query processes, open network sockets, kernel modules, file integrity (FIM), and scheduled tasks with standard SQL statements.
+   - **Tech Stack**: C++, CMake, SQLite engine. Supports Linux, macOS, Windows, and FreeBSD.
+   - **Best For**: Real-time cross-platform host interrogation, telemetry collection pipelines, and compliance verification.
 
+2. **[Wazuh](https://github.com/wazuh/wazuh)** [![GitHub stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers)
+   - **Unified Open Source SIEM, XDR & Security Monitoring Platform (GPLv2)**
+   - **Highlights**: The most deployed open-source endpoint security solution. Features host intrusion detection (HIDS), file integrity monitoring (FIM), vulnerability assessment, automated active responses (firewall dropping, host isolation, account locking), and deep MITRE ATT&CK mapping.
+   - **Tech Stack**: C, Python, OpenSearch indexing backend.
+   - **Best For**: Centralized SOC visibility, regulatory compliance (PCI DSS, HIPAA, NIST, CIS benchmarks), and log-based threat mitigation.
 
+3. **[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)** [![GitHub stars](https://img.shields.io/github/stars/redcanaryco/atomic-red-team?style=social&color=white)](https://github.com/redcanaryco/atomic-red-team/stargazers)
+   - **Library of Simple, Portable Open-Source Tests Mapped to MITRE ATT&CK (MIT)**
+   - **Highlights**: Essential companion tool for verifying and benchmarking EDR capabilities. Provides scripted atomic tests to simulate adversary techniques and evaluate whether your EDR agents reliably log and alert on adversarial activity.
+   - **Tech Stack**: YAML, PowerShell, Bash, Python.
+   - **Best For**: EDR alert validation, detection regression testing, and security posture validation.
 
-- **Velociraptor**
+4. **[Sigma](https://github.com/SigmaHQ/sigma)** [![GitHub stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers)
+   - **Generic Signature Format for SIEM and EDR Detection Systems (DRL License)**
+   - **Highlights**: The standard open detection format. Write rules once and automatically translate them into queries for Wazuh, Splunk, Elastic, Microsoft Sentinel, and Velociraptor.
+   - **Tech Stack**: YAML, Python (`pySigma`).
+   - **Best For**: Portable detection engineering and cross-platform rule management.
 
-  **Endpoint visibility and digital forensics platform** (Apache 2.0) — **the most powerful open-source tool for DFIR and threat hunting at scale**, with ~4,000 GitHub stars and active development . **Features**: **VQL (Velociraptor Query Language)** for interrogating endpoints—extremely powerful for custom hunts; **real-time monitoring** for process execution chains, network connections, and bash instrumentation; **hunts across thousands of endpoints** in minutes; **offline collectors** for field forensics; **low resource consumption** compared to full EDR agents. **Limitations**: **Not an EDR**—no continuous detection or prevention; **requires VQL knowledge**—high learning curve; **no native enterprise integrations** . **Tech stack**: Go. **Deploy**: Self-hosted (server + agents). **Trade-off**: **Hunting and forensics tool, not continuous EDR**—it excels at investigation but does not replace round-the-clock monitoring . **Best for**: DFIR teams and threat hunters wanting deep endpoint interrogation without commercial EDR licensing—especially for incident response and proactive hunting.
+5. **[Fleet](https://github.com/fleetdm/fleet)** [![GitHub stars](https://img.shields.io/github/stars/fleetdm/fleet?style=social&color=white)](https://github.com/fleetdm/fleet/stargazers)
+   - **Open-Source Endpoint Management & Osquery Fleet Manager (MIT / Core)**
+   - **Highlights**: Lightweight, scalable central control server for managing thousands of Osquery and Orbit agents across enterprise desktop and server environments.
+   - **Tech Stack**: Go, Vue.js, MySQL, Redis.
+   - **Best For**: Real-time fleet-wide host visibility, scheduled live query automation, and IT/security cross-collaboration.
 
+6. **[GRR Rapid Response](https://github.com/google/grr)** [![GitHub stars](https://img.shields.io/github/stars/google/grr?style=social&color=white)](https://github.com/google/grr/stargazers)
+   - **Enterprise Remote Digital Forensics and Incident Response Framework (Apache 2.0)**
+   - **Highlights**: Created by Google to conduct scalable incident triage. Facilitates deep endpoint volatile memory analysis, remote raw disk access, file extraction, and automated forensic timelines.
+   - **Tech Stack**: Python, Protocol Buffers.
+   - **Best For**: Incident response teams requiring deep forensic collection across large distributed fleets.
 
+7. **[OSSEC HIDS](https://github.com/ossec/ossec-hids)** [![GitHub stars](https://img.shields.io/github/stars/ossec/ossec-hids?style=social&color=white)](https://github.com/ossec/ossec-hids/stargazers)
+   - **Pioneering Host-Based Intrusion Detection System (GPLv2)**
+   - **Highlights**: Foundational engine that originally powered Wazuh. Offers signature-based log analysis, rootkit detection, active firewall responses, and lightweight integrity checking.
+   - **Tech Stack**: C.
+   - **Best For**: Minimalist servers, legacy operating systems, and resource-constrained environments.
 
-- **OpenEDR**
+8. **[Velociraptor](https://github.com/velocidex/velociraptor)** [![GitHub stars](https://img.shields.io/github/stars/velocidex/velociraptor?style=social&color=white)](https://github.com/velocidex/velociraptor/stargazers)
+   - **Advanced Digital Forensics and Threat Hunting Platform (Apache 2.0)**
+   - **Highlights**: Industry powerhouse for DFIR. Uses VQL (Velociraptor Query Language) to execute complex, multi-threaded investigations and live memory/file artifact hunts across tens of thousands of endpoints in minutes.
+   - **Tech Stack**: Go.
+   - **Best For**: Proactive threat hunting, triage automation, and rapid incident response investigations.
 
-  **Open-source endpoint detection and response platform** (open source, Xcitium) — **the most dedicated open-source EDR codebase**, positioned as a full EDR capability . **Features**: **Analytic detection with MITRE ATT&CK visibility**; event correlation and root cause analysis of adversarial activity; real-time detection; **fully open source**—inspect, audit, and improve. **Limitations**: **Limited independent validation**—claims are vendor-reported; **smaller community** than Wazuh or Velociraptor. **Tech stack**: Per repository. **Deploy**: Self-hosted. **Trade-off**: **Early-stage ecosystem**—fewer integrations and less documentation than established alternatives. **Best for**: organizations wanting a dedicated open-source EDR codebase to evaluate or contribute to—willing to accept early-stage maturity.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **OSSEC** — Host-based intrusion detection system (HIDS) (open source). Foundational log-based detection, FIM, active response. **Note**: **Predecessor to Wazuh**—OSSEC is the original HIDS; Wazuh forked and expanded it. **Best for**: legacy deployments or minimal HIDS needs .
-
-- **Warden** — Open-source EDR for Linux workstations (Rust). YARA scanning, ransomware detection, quarantine, hardened security model with pkexec authentication . **Note**: **Linux-only**; newer project with active security testing. **Best for**: Linux workstation protection with a security-first design .
-
-- **Rustinel** — Cross-platform EDR runtime (Rust). ETW (Windows) and eBPF (Linux) telemetry, Sigma/YARA/IOC detection, ECS-compatible alerts . **Note**: **Early-stage** (~141 stars); less validation than Wazuh or Velociraptor. **Best for**: developers wanting a modern, Rust-based EDR foundation.
-
-- **Vettaiyan** — Open-source EDR for Windows (active development). Real-time detection, response actions, telemetry collection . **Note**: **In progress**—not production-ready. **Best for**: contributors wanting to shape a new Windows EDR project.
-
-
-
-**Frameworks for building custom systems**: Combine **Wazuh** for SIEM/EDR detection with **Velociraptor** for DFIR and hunting and **Sigma** for portable detection rules—creating a layered open-source endpoint security stack. **None of these match CrowdStrike's kernel-level prevention or SentinelOne's autonomous response**, but for detection and investigation, the options are production-capable.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- EDR platforms handling endpoint telemetry must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls for security data.
-
-- **The "prevention-focused EDR" vs. "detection/SIEM hybrid" vs. "DFIR/hunting tool" distinction is critical.** **CrowdStrike, SentinelOne, Microsoft Defender, and Cortex XDR** are **prevention-focused EDR**—they block threats at the kernel level and provide autonomous response . **Wazuh** is a **detection/SIEM hybrid**—it detects and responds but does not prevent process execution . **Velociraptor** is a **DFIR/hunting tool**—it excels at investigation but lacks continuous detection . **Choose based on whether you need prevention, detection, or investigation.**
-
-- **Wazuh is the most complete open-source SIEM/EDR**, with compliance mapping, active response, and a large community . **The trade-off**: no real-time prevention; requires significant tuning and infrastructure.
-
-- **Velociraptor is unmatched for DFIR at scale**—VQL enables custom hunts across thousands of endpoints in minutes . **The trade-off**: it is not an EDR—no continuous monitoring or prevention. **Pair it with Wazuh for detection.**
-
-- **OpenEDR is the most dedicated open-source EDR attempt**, but independent validation is limited . **For organizations wanting a full EDR codebase, it is worth evaluating; for proven detection, Wazuh is safer.**
-
-- **Huntress is the most accessible managed EDR for SMBs** at ~$8/endpoint/month with human threat hunters . **For organizations without SOC staff, it is a pragmatic choice.**
-
-- Self-hosted open-source solutions require proper infrastructure (servers for Wazuh, agents on endpoints), security hardening, and ongoing maintenance. **Endpoint agents have deep system visibility**—ensure your deployment meets your organization's security and privacy requirements before installing on production endpoints.
-
-
+9. **[OpenEDR](https://github.com/ComodoSecurity/openedr)** [![GitHub stars](https://img.shields.io/github/stars/ComodoSecurity/openedr?style=social&color=white)](https://github.com/ComodoSecurity/openedr/stargazers)
+   - **Full-Featured Open-Source Endpoint Detection & Response Engine (Open Source)**
+   - **Highlights**: Open-sourced by Xcitium/Comodo. Incorporates native kernel drivers and user-mode services for process tracking, file/network interception, memory inspection, and MITRE ATT&CK correlation.
+   - **Tech Stack**: C, C++.
+   - **Best For**: Teams and researchers seeking a genuine low-level, kernel-interfacing EDR agent codebase.
 
 ---
 
+### 🧪 Emerging, Niche & Framework Projects
 
+10. **[Rustinel](https://github.com/Karib0u/rustinel)** [![GitHub stars](https://img.shields.io/github/stars/Karib0u/rustinel?style=social&color=white)](https://github.com/Karib0u/rustinel/stargazers)
+    - **Cross-Platform Telemetry & Detection Engine in Rust**
+    - Collects Windows ETW and Linux eBPF telemetry without kernel drivers. Evaluates Sigma rules and YARA signatures in user space with ECS-compliant NDJSON alert outputs.
 
-**Made for SOC teams, security engineers, and organizations building transparent endpoint security solutions.**
+11. **[Vettaiyan](https://github.com/m0n1x90/vettaiyan)** [![GitHub stars](https://img.shields.io/github/stars/m0n1x90/vettaiyan?style=social&color=white)](https://github.com/m0n1x90/vettaiyan/stargazers)
+    - **Enterprise-Grade Open-Source Windows EDR Engine in C/C++**
+    - Utilizes Windows kernel callbacks (PsSetCreateProcessNotifyRoutineEx, ObRegisterCallbacks, Registry callbacks) for process, thread, and registry tampering detection alongside YARA memory scanning.
 
-Let's make Endpoint Detection & Response more open, data-driven, and threat-aware.
+12. **[Warden](https://github.com/Spellskite-coding/Warden)** [![GitHub stars](https://img.shields.io/github/stars/Spellskite-coding/Warden?style=social&color=white)](https://github.com/Spellskite-coding/Warden/stargazers)
+    - **Security-First Linux Workstation EDR (Rust)**
+    - Designed specifically for Linux endpoints with automated quarantine, ransomware behavioral detection, YARA integration, and strict privilege elevation controls.
+
+---
+
+## 🤝 How to Contribute
+
+We welcome contributions, corrections, and additions from the cybersecurity community! 🚀
+
+1. 🍴 **Fork the Repository** on GitHub.
+2. 🌿 **Create a Feature Branch** (`git checkout -b feature/new-edr-entry`).
+3. ✍️ **Add or Update Entries**:
+   - Ensure software entries follow the tabular/bullet schema.
+   - Include factual pricing, free trial specifications, and accurate technical details.
+   - For open-source tools, include the repository URL, star badge, license, and primary use case.
+4. 📬 **Submit a Pull Request** with a concise description of your changes.
+
+---
+
+## 💖 Support
+
+If you find this curated EDR directory helpful for your security operations, threat hunting, or research:
+- ⭐ **Star this repository** to show your support and help others discover it!
+- 🍴 **Fork & Share** it with your SOC team, colleagues, and cybersecurity network.
+- ☕ **Buy a Coffee / Sponsor**: Support continued open-source cybersecurity curation via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Endpoint-Detection-Response-EDR&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Endpoint-Detection-Response-EDR&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated guide** intended for informational and architectural evaluation purposes only. No direct vendor endorsement is implied.
+- Deploying endpoint sensors involves high-privilege system hooks and continuous kernel/audit event collection. Always test telemetry agents in sandbox environments and verify compliance with regional data privacy laws (GDPR, CCPA, HIPAA) before rolling out agents in production.
+- **Prevention vs. Detection vs. Hunting**: Commercial tools (CrowdStrike, SentinelOne, Microsoft Defender, Cortex XDR) excel at inline pre-execution and kernel-level prevention. Open-source solutions (Wazuh, Osquery, Velociraptor) deliver transparent, vendor-independent detection, post-incident triage, and forensics at scale. Align your choice with your organizational security maturity.

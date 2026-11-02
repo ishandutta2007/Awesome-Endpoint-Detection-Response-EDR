@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b19" />
+      <stop offset="50%" stop-color="#0a122c" />
+      <stop offset="100%" stop-color="#040711" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.45" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.25" />
+    </pattern>
+
+    <!-- Glowing Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .bg-grid { opacity: 0.8; }
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #94a3b8;
+    }
+    .tagline-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      fill: #38bdf8;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+    
+    /* Dynamic pulsing animations */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(-15px, 10px); opacity: 0.65; }
+    }
+    @keyframes pulseRing {
+      0% { r: 12; opacity: 0.8; stroke-width: 2; }
+      100% { r: 38; opacity: 0; stroke-width: 0.5; }
+    }
+    @keyframes scanLine {
+      0% { transform: translateY(-40px); opacity: 0; }
+      50% { opacity: 0.6; }
+      100% { transform: translateY(420px); opacity: 0; }
+    }
+    @keyframes dashMove {
+      to { stroke-dashoffset: -100; }
+    }
+    @keyframes floatPill {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    .orb-1 { animation: pulseOrb 8s ease-in-out infinite alternate; transform-origin: 200px 150px; }
+    .orb-2 { animation: pulseOrb 10s ease-in-out infinite alternate-reverse; transform-origin: 950px 220px; }
+    .radar-pulse-1 { animation: pulseRing 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
+    .radar-pulse-2 { animation: pulseRing 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite 1.5s; }
+    .radar-pulse-3 { animation: pulseRing 2.6s cubic-bezier(0.215, 0.61, 0.355, 1) infinite 0.7s; }
+    .scanner { animation: scanLine 7s linear infinite; }
+    .flow-line { stroke-dasharray: 6 6; animation: dashMove 2.5s linear infinite; }
+    .pill-group-1 { animation: floatPill 4s ease-in-out infinite; }
+    .pill-group-2 { animation: floatPill 4.5s ease-in-out infinite 0.5s; }
+    .pill-group-3 { animation: floatPill 4.2s ease-in-out infinite 1s; }
+    .pill-group-4 { animation: floatPill 5s ease-in-out infinite 1.5s; }
+  </style>
+
+  <!-- Deep High-Tech Canvas Background -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" fill="url(#grid)" class="bg-grid" />
+
+  <!-- Dynamic Glowing Orbs in the Background (Behind text) -->
+  <circle cx="220" cy="140" r="180" fill="url(#glowGrad)" class="orb-1" filter="url(#glow)" />
+  <circle cx="980" cy="240" r="220" fill="url(#glowGrad)" class="orb-2" filter="url(#glow)" />
+
+  <!-- Animated Sensor Radar Wave Effect (Right side telemetry node) -->
+  <g transform="translate(1030, 130)">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#38bdf8" class="radar-pulse-1" />
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#818cf8" class="radar-pulse-2" />
+    <circle cx="0" cy="0" r="8" fill="#38bdf8" filter="url(#softGlow)" />
+    <circle cx="0" cy="0" r="3" fill="#ffffff" />
+  </g>
+
+  <!-- Animated Left Sensor Node -->
+  <g transform="translate(150, 290)">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#0ea5e9" class="radar-pulse-3" />
+    <circle cx="0" cy="0" r="6" fill="#0ea5e9" filter="url(#softGlow)" />
+    <circle cx="0" cy="0" r="2.5" fill="#ffffff" />
+  </g>
+
+  <!-- Dynamic Cyber Data Stream Lines in background -->
+  <path d="M 80 80 Q 200 40 400 70 T 800 60 T 1120 90" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.3" class="flow-line" />
+  <path d="M 120 360 Q 350 390 600 360 T 1080 350" fill="none" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.3" class="flow-line" />
+
+  <!-- Dynamic Scan Line -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#accentGrad)" stroke-width="1.5" class="scanner" opacity="0.4" />
+
+  <!-- Shield / Crosshair Foreground Cyber Icon Behind Header -->
+  <g transform="translate(600, 72)" text-anchor="middle">
+    <!-- Outer Ring -->
+    <circle cx="0" cy="0" r="36" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.8" filter="url(#softGlow)" />
+    <!-- Inner Crosshair Shield Motif -->
+    <path d="M 0 -18 L 16 -8 L 16 8 Q 16 18 0 24 Q -16 18 -16 8 L -16 -8 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="0" cy="3" r="4" fill="#38bdf8" />
+  </g>
+
+  <!-- FOREGROUND TEXT (Clear, High Contrast, Guaranteed Foreground Visibility) -->
+  <!-- Tagline Category -->
+  <text x="600" y="145" text-anchor="middle" class="tagline-text">
+    🛡️ Next-Gen Endpoint Defense • Telemetry • Forensics
+  </text>
+
+  <!-- Main Title with Gradient Accent -->
+  <text x="600" y="202" text-anchor="middle" class="title-text">
+    Awesome Endpoint Detection &amp; Response (EDR)
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="246" text-anchor="middle" class="subtitle-text">
+    Curated SaaS Platforms, Enterprise Architectures &amp; Production-Proven Open-Source Systems
+  </text>
+
+  <!-- Floating Feature / Capability Badges & Pills -->
+  <!-- Pill 1: Behavioral Analytics -->
+  <g class="pill-group-1" transform="translate(190, 290)">
+    <rect width="180" height="38" rx="19" fill="#0f172a" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.2" filter="url(#softGlow)" />
+    <circle cx="20" cy="19" r="5" fill="#38bdf8" />
+    <text x="34" y="24" class="pill-text">Behavioral Analytics</text>
+  </g>
+
+  <!-- Pill 2: Threat Hunting -->
+  <g class="pill-group-2" transform="translate(390, 290)">
+    <rect width="165" height="38" rx="19" fill="#0f172a" fill-opacity="0.85" stroke="#818cf8" stroke-width="1.2" filter="url(#softGlow)" />
+    <circle cx="20" cy="19" r="5" fill="#818cf8" />
+    <text x="34" y="24" class="pill-text">Threat Hunting</text>
+  </g>
+
+  <!-- Pill 3: MITRE ATT&CK -->
+  <g class="pill-group-3" transform="translate(575, 290)">
+    <rect width="175" height="38" rx="19" fill="#0f172a" fill-opacity="0.85" stroke="#a855f7" stroke-width="1.2" filter="url(#softGlow)" />
+    <circle cx="20" cy="19" r="5" fill="#a855f7" />
+    <text x="34" y="24" class="pill-text">MITRE ATT&amp;CK</text>
+  </g>
+
+  <!-- Pill 4: Automated Response -->
+  <g class="pill-group-4" transform="translate(770, 290)">
+    <rect width="220" height="38" rx="19" fill="#0f172a" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.2" filter="url(#softGlow)" />
+    <circle cx="20" cy="19" r="5" fill="#38bdf8" />
+    <text x="34" y="24" class="pill-text">Automated Response</text>
+  </g>
+
+  <!-- Bottom Terminal Accent Border -->
+  <line x1="300" y1="365" x2="900" y2="365" stroke="url(#accentGrad)" stroke-width="1" stroke-opacity="0.6" />
+  <circle cx="600" cy="365" r="3" fill="#38bdf8" filter="url(#softGlow)" />
+</svg>
