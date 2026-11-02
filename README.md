@@ -32,79 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global Endpoint Detection and Response (EDR) market is valued between **$5.1B and $7.2B** (projected to reach **$18B to $45B+** by the early 2030s at a 22–26% CAGR). The market is **moderately concentrated** at the top tier—dominated by an oligopoly of enterprise platform heavyweights like Microsoft, CrowdStrike, SentinelOne, and Palo Alto Networks driving vendor consolidation—while remaining **fragmented** across specialized Managed Detection and Response (MDR) providers and regional compliance niches.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **CrowdStrike Falcon Insight**
-
-  **Cloud-native EDR** with kernel-level visibility and threat graph. **Pricing**: Quote-only; per-endpoint subscription. **Free tier**: Falcon Go free (100 devices) with limited EDR. **Best for**: enterprises wanting the most mature detection and threat intelligence—**trade-off**: premium pricing; ecosystem lock-in.
-
-
-
-- **SentinelOne Singularity Complete**
-
-  **Autonomous EDR** with AI-driven prevention and response. **Pricing**: **Singularity Complete from ~$179.99/endpoint/year** ; quote-based for enterprise. **Free tier**: None. **Best for**: organizations wanting autonomous response without human intervention—**trade-off**: agent resource usage; console complexity.
-
-
-
-- **Microsoft Defender for Endpoint**
-
-  **EDR integrated with Microsoft 365** and Defender XDR. **Pricing**: Included with M365 E5; standalone from ~$3/user/month. **Free tier**: Limited trial. **Best for**: Microsoft-centric organizations wanting native integration—**trade-off**: Microsoft ecosystem dependency; cross-platform support varies.
-
-
-
-- **Palo Alto Cortex XDR**
-
-  **Extended detection and response** combining endpoint, network, and cloud. **Pricing**: Quote-only. **Free tier**: None. **Best for**: Palo Alto customers wanting unified XDR—**trade-off**: requires Palo Alto ecosystem investment.
-
-
-
-- **Carbon Black EDR** (Broadcom)
-
-  **Enterprise EDR** with behavioral detection. **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises with existing Broadcom relationships—**trade-off**: product roadmap uncertainty post-VMware acquisition.
-
-
-
-- **Cybereason**
-
-  **AI-driven EDR** with autonomous hunting. **Pricing**: Quote-only. **Free tier**: None. **Best for**: SOC teams wanting behavioral detection with MITRE ATT&CK coverage—**trade-off**: enterprise pricing; implementation complexity.
-
-
-
-- **Trend Micro Vision One**
-
-  **XDR platform** with endpoint, email, and cloud detection. **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises wanting broad coverage from a single vendor.
-
-
-
-- **Trellix EDR** (formerly McAfee/FireEye)
-
-  **Enterprise EDR** with threat intelligence integration. **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises with existing Trellix investments.
-
-
-
-- **Sophos EDR**
-
-  **EDR with managed threat response** option. **Pricing**: Quote-only; tiered by features. **Free tier**: Trial available. **Best for**: mid-market organizations wanting EDR with optional MDR.
-
-
-
-- **Huntress**
-
-  **Managed EDR for SMBs** with human threat hunters. **Pricing**: **Starting at ~$8/endpoint/month** (annual); quote-based for higher volumes. **Free tier**: None. **Best for**: SMBs wanting managed detection without enterprise complexity—**trade-off**: managed service; less customizable.
-
-
+| Product | Company Valuation / Revenue | Starting Pricing | Free Tier / Trial Limits | Description & Key Trade-offs |
+| :--- | :--- | :--- | :--- | :--- |
+| **Microsoft Defender for Endpoint** | **~$3.8T Market Cap** / ~$281.7B FY25 Revenue | **$3.00/user/month** (Plan 1 standalone, annual commit; Plan 2 at $5.20/user/month; up to 5 concurrent devices/user) | **30-day free trial** (up to 25 test licenses across Windows, macOS, Linux with full Plan 2 EDR/AIR features) | Cloud-native EDR integrated natively into Microsoft 365 and Defender XDR. Excellent integration; trade-off is Microsoft ecosystem lock-in and varying cross-OS telemetry parity. |
+| **Carbon Black EDR** (Broadcom) | **~$1.3T Market Cap** / ~$63.9B FY25 Revenue | **~$50.00/endpoint/year** (baseline list through authorized enterprise partners; ~$4.15/endpoint/month) | **14 to 30-day proof-of-concept (POC)** (custom provisioned evaluation via partner/sales rep; no automated self-service free tier) | Enterprise behavioral detection and continuous monitoring. Best for Broadcom ecosystem users; trade-off is licensing model complexity post-VMware transition. |
+| **Palo Alto Cortex XDR** | **~$120B Market Cap** / ~$9.2B FY25 Revenue | **~$7.00/endpoint/month** (baseline Cortex XDR Prevent/Pro software licensing via certified partner quote) | **14 to 30-day proof-of-concept (POC)** (gated evaluation coordinated via sales engineering; no automated instant free trial) | Extended detection and response marrying endpoint telemetry with network firewalls and cloud events. Trade-off is heavy reliance on Palo Alto infrastructure investment. |
+| **CrowdStrike Falcon Insight** | **~$80B Market Cap** / ~$3.95B FY25 Revenue | **$59.99/device/year** (~$4.99/month for Falcon Go entry tier; Falcon Pro starts at ~$95.00/device/year) | **15-day free trial** (Falcon Prevents/Go features on up to 100 endpoints, zero credit card required; no permanent free tier) | Cloud-native EDR with Threat Graph and lightweight kernel agent. Industry-leading intelligence; trade-off is premium pricing and enterprise contract minimums. |
+| **SentinelOne Singularity Complete** | **~$6.5B Market Cap** / ~$800M Revenue | **$69.99/endpoint/year** (Singularity Core AV; full Singularity Complete EDR starts at ~$179.99/endpoint/year) | **14 to 30-day proof-of-concept (POC)** (partner/sales-assisted trial with full automated remediation; no instant self-service free tier) | Autonomous AI-driven EDR with Storyline tracking and one-click rollback. Trade-off is local agent resource footprint during high-volume process scanning. |
+| **Trend Micro Vision One** | **~$6.0B Market Cap** / ~$1.7B Revenue | **~$25.00/endpoint/year** (core endpoint security/EDR subscription component pricing; ~$2.08/month) | **30-day free trial** (unlimited access to Vision One console and threat hunting modules during evaluation window) | Broad detection across endpoints, email, and cloud workloads. Best for all-in-one vendor environments; trade-off is suite complexity. |
+| **Sophos EDR** (Intercept X) | **~$3.9B Enterprise Value** / ~$1.2B Revenue | **~$35.00/user/year** (Intercept X Advanced starting price through authorized MSP partners; ~$2.90/user/month) | **30-day free trial** (fully functional Sophos Central evaluation with unlimited device onboarding during trial) | EDR combined with deep learning anti-exploit tech and optional 24/7 MDR. Trade-off is centralized policy management overhead for large enterprise setups. |
+| **Huntress** | **$1.55B Valuation** / ~$150M+ Revenue ($250M ARR run-rate) | **$8.00/endpoint/month** (annual agreement; ~$96.00/endpoint/year with bundled 24/7 human SOC) | **14-day free trial** (unlimited endpoint agents deployed with active human threat-hunting and remediation support) | Managed EDR tailored for SMBs and MSPs with human-backed investigation and isolation. Trade-off is less direct low-level detection rule customization. |
+| **Trellix EDR** | **~$1.05B Revenue** (PE-backed STG/Advent) | **~$45.00/endpoint/year** (baseline Endpoint Security / EDR license via partner quote) | **60-day free trial** (official Endpoint Security ePO evaluation provisioned for up to 5 trial nodes via sales) | Enterprise EDR integrating threat intelligence from legacy FireEye and McAfee engines. Trade-off is legacy console migration complexity. |
+| **Cybereason** | **~$850M Valuation** (Acquired by LevelBlue) / ~$180M Revenue | **~$40.00/endpoint/year** (entry enterprise tier via authorized distribution quote; ~$3.33/endpoint/month) | **14 to 30-day proof-of-concept (POC)** (custom enterprise evaluation environment provisioned via sales rep) | AI-guided MalOp cross-machine correlation and MITRE ATT&CK visibility. Trade-off is enterprise pricing floor and implementation overhead. |
 
 ## Open-Source GitHub Projects
 
